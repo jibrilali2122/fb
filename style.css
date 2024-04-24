@@ -1,0 +1,238 @@
+body,html{
+    min-height: 100vh;
+    margin: 0 ;
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5;
+  }
+  .body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 100vh;
+    margin: auto;
+  }
+  header{
+    display: flex;
+    justify-content: center;
+  }
+  .logo-img{
+  width: 15rem;
+  }
+  
+
+  .form{
+    border-radius: .5rem; 
+     background-color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3); /* Adjust shadow parameters as needed */
+  }
+  form{
+    padding: 1rem 2rem;
+  }
+  form p{
+text-align: center;
+  }
+  .input-label {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .input-label label{
+    position: absolute;
+    pointer-events: none;
+    transform: translate(0, 23px) scale(1);
+    transform-origin: top left;
+    transition: 200ms cubic-beizer(0,0,0.2,1);
+  }
+  .input-label:focus-within label {
+    transform: translate(0,5px) scale(0.8);
+  
+  }
+  .input-label .filled {
+    transform: translate(0, 12px) scale(0.8);
+  }
+  .forgot-password{
+    text-align: center;
+    margin-top: 10px;
+
+  }
+  .forgot-password a{
+       color: #0866ff;
+       text-decoration: none;
+       font-size: 14px;
+  }
+  .underline{
+    border: 2rem;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .underline hr{
+    width: 40%;
+
+  }
+  .new-acct{
+    background-color: #42b72a;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 25px;
+    color: white;
+  }
+ 
+  .button{
+    background-color: #0866ff;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    line-height: 48px;
+    padding: 0 16px;
+    width: 332px;
+    color: white;
+  }
+  .button-container{
+    display: flex;
+    justify-content: center;
+  }
+  .text-input input{
+    width: 330px;
+    font-size: 17px;
+    background: 0 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 23px 16px;
+    margin: 10px 0;
+    width: 100%;
+      height: 2.5rem;
+      outline: 0.0625rem solid transparent;
+      letter-spacing: 0;
+      text-decoration: none;
+      text-transform: none;
+      text-indent: 0px;
+      text-shadow: none;
+      display: inline-block;
+      text-align: start;
+  }
+  .text-input input:focus{
+    outline: 0.0625rem solid #0866ff;
+
+  }
+  .header-links a{
+    color: #126bc5;
+    text-decoration: none;
+  }
+  .new-acct-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /*footer Links */
+  .first-footer{
+    padding: 2rem 0;
+    background-color: #ffff;
+     color: #666; 
+     width: 100vw;;
+     }
+  hr{
+    width: 60%;
+  }
+  .otp-timer{
+    text-align: center;
+    margin: .5rem 0 !important;
+  }
+  .footer-links{
+    width: 60%;
+    margin: auto;
+  }
+
+  .footer-links a{
+    text-decoration: none;
+    color: #757575;
+      font-size: .65625rem;  
+      margin-right: 1rem;
+  }
+  .second-footer{
+    display: none;
+  }
+  .second-footer-links{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+  }
+  .small-footer-links a{
+text-decoration: none;
+    color: #757575;
+      font-size: .65625rem;
+  }
+  .small-footer-links{
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-links img{
+    width: 1rem;
+    height: 1rem;
+    
+  }
+  .copyright {
+    margin-top: 1rem !important;
+    width: 60%;
+    margin: auto;
+  }
+  .last-section{
+    text-decoration: none;
+    color: #757575;
+      font-size: .65625rem;  
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .last-section small{
+    margin-bottom: 2vh;
+  }
+  @media (max-width: 1200px) {
+
+}
+
+  @media (max-width: 500px) {
+    .logo-img{
+      margin: 5vh 0;
+      }
+    .second-footer{
+      display: block
+    }
+    .first-footer{
+      display: none;
+    }
+    .form{
+      width: 100%;
+      background-color: #f0f2f5;
+      box-shadow: none;
+    }
+    form{
+      padding: 0;
+    }
+    .body{
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      min-height: auto;
+    }
+    form p {
+      display: none
+    }
+    .text-input input{
+      width: 90vw;
+      background-color: rgba(128, 128, 128,0.1);
+}
+.button{
+width: 90vw;
+}
+  }
+
